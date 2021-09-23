@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icon/themify-icons.css">
 
 </head>
+
 <body>
     <div id="main">
         <div id="header">
@@ -101,7 +102,7 @@
                                 <h2 class="tour-place-name">Sài Gòn</h2>
                                 <p class="tour-place-time">Sun 17 Jan 2020</p>
                                 <p class="tour-place-des">Last festival of 1821.</p> <br>
-                                <li><a class="buy-ticket-but" href="#" >Buy Ticket</a></li>
+                                <li><button class="buy-ticket-but js-buy-ticket" href="#" >Buy Ticket</button></li>
                             </div>
                         </div>
                 
@@ -111,9 +112,10 @@
                                 <h2 class="tour-place-name">Hà Nội</h2>
                                 <p class="tour-place-time">Sat 11 Jul 2020</p>
                                 <p class="tour-place-des">Last end-of-shool-year ceremony of 1821.</p>
-                                <li><a class="buy-ticket-but" href="#" >Buy Ticket</a></li>
+                                <button class="buy-ticket-but js-buy-ticket" href="#" >Buy Ticket</button>
                             </div>
                         </div>
+                        
 
                         <div class="tour-place">
                             <img class="tour-place-ima" src="/F8_w3_band/F8_w3_band/assets/img/tour-place3.jpg" alt="Hue's-image"></img>
@@ -121,7 +123,7 @@
                                 <h2 class="tour-place-name">Huế</h2>
                                 <p class="tour-place-time">Sun 17 Jan 2020</p>
                                 <p class="tour-place-des">Project started a year after Dreamy-Eyes, 1stmWUT.</p>
-                                <li><a class="buy-ticket-but" href="#" >Buy Ticket</a></li>
+                                <button class="buy-ticket-but js-buy-ticket" href="#" >Buy Ticket</button>
                             </div>
                         </div>
                 </div>
@@ -148,11 +150,11 @@
             Poweredby <a class="footer-ending" href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
         </div>
     </div>
-    
-    <div class="modal open">   
-        <div class="modal-container">
-            <div class="">
-                <i class="ti-close modal-close"></i>
+
+    <div class="modal js-modal">   
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
             </div>
 
             <header class="modal-header">
@@ -162,14 +164,14 @@
 
             <div class="modal-body">
                 <label for="ticket-quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
+                    <strong><i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person</strong>
                 </label>
                 <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
 
                 <label for="ticket-email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
+                    <strong><i class="ti-user"></i>
+                    Send To</strong>
                 </label>
                 <input id="ticket-email" type="text" class="modal-input" placeholder="Enter email">
             
@@ -185,6 +187,19 @@
     </div>
     
     <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalCon = document.querySelector('.js-modal-container')
+        const closeBtns = document.querySelector('.js-modal-close')
+
+        function showModal() {modal.classList.add('open')}
+        function closeModal() {modal.classList.remove('open')}
+
+        for(const buyBtn of buyBtns){buyBtn.addEventListener('click', showModal)}
+
+        closeBtns.addEventListener('click', closeModal)
+        modal.addEventListener('click',closeModal)
+        modalCon.addEventListener('click',function(event){event.stopPropagation()})
     </script>
 </body>
 </html>
