@@ -23,7 +23,15 @@ html{
 4. Kiểu dáng (kiểu chữ, hình tròn, vuông...)
 */
 
+/* setup */
 .clear{ clear: both;}
+.mt8{margin-top: 8px;}
+.row{margin-left: -8px; margin-right: -8px;}
+.row::after{content: ""; display: block; clear: both;}
+.col{float:left; padding-left: 8px; padding-right: 8px;}
+.col-two{width: 50%;}
+.col-three{width: 33.3333%;}
+.col-one{width: 100%;}
 
 #main {}
 
@@ -144,8 +152,7 @@ html{
 
 #content .content-layout {
     width: 800px;
-    padding: 64px;
-    text-align: center;
+    padding: 64px 16px 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -155,6 +162,7 @@ html{
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 #content .layout-subheading {
@@ -162,6 +170,7 @@ html{
     font-size: 15px;
     font-style: italic;
     font-weight: 100;
+    text-align: center;
 }
 
 /* band ss */
@@ -249,14 +258,7 @@ html{
 
 /* tour-places ss */
 .tour-place-list{
-    margin: 32px -8px 48px;
-}
-
-.tour-place {
-    float: left;
-    width: 33.3333%;
-    padding: 0px 8px;
-    height: 374;
+    margin-top: 32px;
 }
 
 .tour-place-ima {
@@ -314,13 +316,50 @@ html{
 
 /* contact ss */
 #contact{}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-in4{
+    font-size: 18px;
+    line-height: 1.6px;
+    margin-top: 8px;
+}
+
+.contact-in4 i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form .form-submit{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 11.5px 20px;
+    float: right;
+}
+
+.contact-form .form-submit:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
 /* contact es */
 
 /* pano ss */
-#pano {
-    position: relative;
-    padding-top: 50%;
-    background: url('/F8_w3_band/F8_w3_band/assets/img/pano.jpg') center / cover no-repeat;
+#pano img{
+    width: 100%;
+    
 }
 /* pano es */
 /* content es */
@@ -412,7 +451,7 @@ html{
 .modal-input{
     border: 1px solid #ccc;
     width: 100%;
-    padding 12px
+    padding: 12px;
     font-size: 15px;
     margin: 12px 0px 32px 0px;
 }
@@ -455,88 +494,3 @@ html{
     }
 }
 /* modal es */
-
-/* tour-places ss */
-/* .tour-place-list{
-    width: 834px;
-    margin-top: 32px;
-    overflow: hidden;
-    font-size: 15;
-    margin-left: -64px;
-}
-
-.tour-place {
-    float: left;
-    width: 244px;
-    height: 360px;
-    background-color: #fff;
-    text-align: left;
-    margin: 15px 34px 15px 0px;
-}
-
-.tour-place-ima {
-    text-align: center;
-    width: 244px;
-    height: 164px;
-}
-
-.tour-place-ima:hover{
-    opacity: 0.6;
-}
-
-.tour-place-name {
-    color: #000;
-    margin: 15px;
-}
-
-.tour-place-time {
-    color: #ccc;
-    margin: 15px;
-}
-
-.tour-place-des {
-    color: #000;
-    margin: 15px;
-}
-
-.buy-ticket-but {
-    margin-left: 16px;
-    padding: 8px 16px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-}
-/* tour-places es */
-/* tour es */
-
-
-/* contact ss */
-/* #contact{} */
-/* contact es */
-
-/* pano ss */
-/* #pano {
-    position: relative;
-    padding-top: 50%;
-    background: url('/F8_w3_band/assets/img/pano.jpg') center / cover no-repeat;
-}
-/* pano es */
-/* content es */
-
-/* footer ss */
-/* #footer {
-    margin-top: 64px;
-    margin-bottom: 64px;
-    width: 100%;
-    text-align: center;
-    line-height: 50px;
-}
-
-#footer .footer-icon{
-    font-size: 24px;
-}
-#footer .footer-icon:hover{
-    opacity: 0.6;
-    cursor: pointer;
-} */ 
-/* footer es */
