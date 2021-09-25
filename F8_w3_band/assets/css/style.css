@@ -123,7 +123,6 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/F8_w3_band/assets/img/slider-ny.jpg') top center / cover no-repeat;
 }
 
 #slider .banner-content {
@@ -132,8 +131,6 @@ html{
     bottom: 47px;
     color: #fff;
     width: 100%;
-    /* left: 50%;
-    transform: translateX(-50%); cách khác để canh lề chữ giữa */
 }
 
 #slider .banner-heading {
