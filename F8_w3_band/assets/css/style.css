@@ -45,6 +45,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 /* begin of f***in' nav */
@@ -52,10 +53,9 @@ html{
 
 #nav {
     display: inline-block;
-    
 }
 
-#nav > li {
+#nav > li{
     display: inline-block;
     position: relative;
     line-height: 46px;
@@ -100,20 +100,34 @@ html{
 /* end of f***in' nav */
 
 /* search icon ss */
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
-    padding: 0 21px;
 }
 
+#header #mobile-menu-bt,
 #header #search-bt {
     float: right;
+    padding: 0 21px;
 }
 
 #header #search-bt:hover {
     background-color: #f44336;
-        cursor: pointer;
+    cursor: pointer;
+}
+
+#header #mobile-menu-bt:hover{
+    background-color: #ccc;
+}
+
+#header #mobile-menu-bt:hover .menu-icon{
+    color: #000;
+}
+
+#header #mobile-menu-bt{
+    display: none;
 }
 /* search icon es */
 /* header es */
@@ -150,6 +164,7 @@ html{
 
 #content .content-layout {
     width: 800px;
+    max-width: 100%;
     padding: 64px 16px 112px;
     margin-left: auto;
     margin-right: auto;
@@ -332,10 +347,12 @@ html{
 
 .contact-form{
     font-size: 15px;
+    padding-right: 3vw;
 }
 
 .contact-form .form-control{
-    padding: 8px;
+    width: 100%;
+    padding: 4px;
     border: 1px solid #ccc;
 }
 
@@ -344,6 +361,7 @@ html{
     color: #fff;
     border: none;
     padding: 11.5px 20px;
+    margin-top: 2vh;
     float: right;
 }
 
@@ -357,7 +375,7 @@ html{
 /* pano ss */
 #pano img{
     width: 100%;
-    
+    height: 600px;
 }
 /* pano es */
 /* content es */
@@ -492,3 +510,30 @@ html{
     }
 }
 /* modal es */
+
+/* RESPONSIVE */
+/* MOBILE */
+@media (max-width: 739px){
+    #nav > li{
+        display: block;
+    }
+    #header #search-bt{
+        display: none;
+    }
+    #header #mobile-menu-bt{
+        display:unset;
+    }
+    .contact-in4{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+    .tour-place-body{
+    min-height: 321px;
+    }
+}
+
+/* PC */
+@media (min-width: 1024px){}
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px){}
