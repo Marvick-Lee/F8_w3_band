@@ -38,6 +38,10 @@
                 <i class="search-icon ti-search"></i>
             </div>
 
+            <div id="mobile-menu-bt">
+                <i id="js-menu" class="menu-icon ti-menu"></i>
+            </div>
+
         </div>
 
         <div id="slider">
@@ -129,6 +133,7 @@
                                 <button class="buy-ticket-but js-buy-ticket" href="#" >Buy Ticket</button>
                             </div>
                         </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -235,6 +240,28 @@
         closeBtns.addEventListener('click', closeModal)
         modal.addEventListener('click',closeModal)
         modalCon.addEventListener('click',function(event){event.stopPropagation()})
+    </script>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('js-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function(){
+            var isClose = header.clientHeight === headerHeight;
+            if(isClose) {header.style.height= 'auto';
+            } else{ header.style.height= null;}
+        }
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        console.log(menuItems)
+        for(var i =0; i<menuItems.length; i++){
+            var menuItem= menuItems[i];   
+
+            menuItem.onclick = function(){
+                header.style.height= null;
+            }
+
+        }
     </script>
 </body>
 </html>
