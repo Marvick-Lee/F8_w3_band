@@ -514,6 +514,9 @@ html{
 /* RESPONSIVE */
 /* MOBILE */
 @media (max-width: 739px){
+    #nav{
+        display: block;
+    }
     #nav > li{
         display: block;
     }
@@ -522,6 +525,9 @@ html{
     }
     #header #mobile-menu-bt{
         display:unset;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     .contact-in4{
         font-size: 12px;
