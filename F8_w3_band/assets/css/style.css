@@ -145,6 +145,7 @@ html{
     bottom: 47px;
     color: #fff;
     width: 100%;
+    text-shadow: #454545;
 }
 
 #slider .banner-heading {
@@ -519,6 +520,9 @@ html{
     }
     #nav > li{
         display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
     }
     #header #search-bt{
         display: none;
