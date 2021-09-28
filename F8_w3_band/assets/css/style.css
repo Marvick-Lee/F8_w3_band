@@ -558,6 +558,11 @@ html{
         width: 100%;
         margin-top: 16px;
     }
+    .contact-form .form-submit{
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: -10vh;
+    }
 }
 
 /* PC */
