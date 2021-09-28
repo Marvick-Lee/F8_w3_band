@@ -514,6 +514,10 @@ html{
 /* RESPONSIVE */
 /* MOBILE */
 @media (max-width: 739px){
+    .s-col-full{
+        width: 100%;
+        margin-bottom: 4vh;
+    }
     #header{
         overflow: hidden;
     }
@@ -537,19 +541,22 @@ html{
     }
     #nav .subnav{
         position: initial;
-        background-color: #333;
+        background-color: #000;
     }
     #nav .subnav a{
         color: #ddd;
         padding-left: 10vw;
     }
-    .contact-in4{
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 1.4;
+    #content .mobile-member{
+        width: 100%;
+        margin-top: 5vh;
     }
-    .tour-place-body{
-    /* min-height: 321px; */
+    .tour-place-list{
+        margin-top: 16px;
+    }
+    .mobile-tour-place{
+        width: 100%;
+        margin-top: 16px;
     }
 }
 
