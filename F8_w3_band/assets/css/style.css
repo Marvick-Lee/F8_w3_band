@@ -343,24 +343,25 @@ html{
 .contact-in4 i[class*="ti-"]{
     width: 30px;
     display: inline-block;
+    line-height: 2.0;
 }
 
 .contact-form{
     font-size: 15px;
-    padding-right: 3vw;
 }
 
 .contact-form .form-control{
     width: 100%;
     padding: 4px;
     border: 1px solid #ccc;
+    padding: 2vh;
 }
 
 .contact-form .form-submit{
     background-color: #000;
     color: #fff;
     border: none;
-    padding: 11.5px 20px;
+    padding: 1.5vh 4vw;
     margin-top: 2vh;
     float: right;
 }
@@ -565,6 +566,26 @@ html{
     }
 }
 
+/* TABLET & MOBILE */
+@media (max-width: 1023px){
+    .buy-ticket-but{
+        padding: 1.5vh 5vw;
+    }
+
+    .contact-form .form-control{
+        padding: 2.5vh;
+    }
+    .contact-form .form-submit{
+        padding: 2vh 5vw;
+    }
+    #footer{
+        font-size: 36px;
+    }
+    #footer .footer-icon{
+        font-size: 48px;
+        padding: 0 1vw;
+    }
+}
 /* PC */
 @media (min-width: 1024px){}
 /* TABLET */
