@@ -555,6 +555,9 @@ html{
     .tour-place-list{
         margin-top: 16px;
     }
+    .tour-place-ima {
+        height: 200px;
+    }
     .mobile-tour-place{
         width: 100%;
         margin-top: 16px;
@@ -579,10 +582,10 @@ html{
         padding: 2vh 5vw;
     }
     #footer{
-        font-size: 36px;
+        font-size: 32px;
     }
     #footer .footer-icon{
-        font-size: 48px;
+        font-size: 36px;
         padding: 0 1vw;
     }
 }
