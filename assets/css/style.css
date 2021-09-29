@@ -593,8 +593,8 @@ html{
 /* PC */
 @media (min-width: 1024px){}
 /* TABLET */
-@media (min-width: 741px) and (max-width: 1023px){
+@media (min-width: 740px) and (max-width: 1023px){
     .tour-place-body{
-        min-height: 240px;
+        min-height: 264px;
     }
 }
