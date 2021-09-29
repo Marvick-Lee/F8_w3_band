@@ -588,6 +588,9 @@ html{
         font-size: 36px;
         padding: 0 1vw;
     }
+    .tour-place-body{
+        min-height: 350px;
+    }
 }
 /* PC */
 @media (min-width: 1024px){}
