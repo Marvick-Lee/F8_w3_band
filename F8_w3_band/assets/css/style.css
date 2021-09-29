@@ -514,7 +514,7 @@ html{
 
 /* RESPONSIVE */
 /* MOBILE */
-@media (max-width: 739px){
+@media (max-width: 740px){
     .s-col-full{
         width: 100%;
         margin-bottom: 4vh;
@@ -592,4 +592,4 @@ html{
 /* PC */
 @media (min-width: 1024px){}
 /* TABLET */
-@media (min-width: 740px) and (max-width: 1023px){}
+@media (min-width: 741px) and (max-width: 1023px){}
