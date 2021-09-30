@@ -594,7 +594,7 @@ html{
 @media (min-width: 1024px){}
 /* TABLET */
 @media (min-width: 740px) and (max-width: 1023px){
-    .tour-place-body{
+    /* .tour-place-body{
         min-height: 264px;
-    }
+    } */
 }
