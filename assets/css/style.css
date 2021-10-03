@@ -118,12 +118,13 @@ html{
 }
 
 #header #mobile-menu-bt:hover{
-    background-color: #ccc;
+    /* background-color: #ccc; */
+    opacity: 0.8;
 }
 
-#header #mobile-menu-bt:hover .menu-icon{
+/* #header #mobile-menu-bt:hover .menu-icon{
     color: #000;
-}
+} */
 
 #header #mobile-menu-bt{
     display: none;
