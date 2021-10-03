@@ -581,13 +581,13 @@ html{
     .contact-form .form-submit{
         padding: 2vh 5vw;
     }
-    #footer{
+    /* #footer{
         font-size: 32px;
     }
     #footer .footer-icon{
         font-size: 36px;
         padding: 0 1vw;
-    }
+    } */
     
 }
 /* PC */
