@@ -24,7 +24,7 @@ mobileMenu.onclick = function () {
     } else { header.style.height = null; }
 }
 
-var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+var menuItems = document.querySelectorAll('#nav li a[href="#"]')
 console.log(menuItems)
 for (var i = 0; i < menuItems.length; i++) {
     var menuItem = menuItems[i];
