@@ -35,5 +35,3 @@ for (var i = 0; i < menuItems.length; i++) {
         else { event.preventDefault() }
     }
 }
-
-<script></script>
